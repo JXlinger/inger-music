@@ -1,0 +1,50 @@
+
+@font-face {
+	font-family: 'icon';
+	src: url('//at.alicdn.com/t/font_1104838_fxzimc34xw.eot');
+	src: url('//at.alicdn.com/t/font_1104838_fxzimc34xw.eot?#iefix') format('embedded-opentype'),
+		url('//at.alicdn.com/t/font_1104838_fxzimc34xw.woff2') format('woff2'),
+		url('//at.alicdn.com/t/font_1104838_fxzimc34xw.woff') format('woff'),
+		url('//at.alicdn.com/t/font_1104838_fxzimc34xw.ttf') format('truetype'),
+		url('//at.alicdn.com/t/font_1104838_fxzimc34xw.svg#iconfont') format('svg');
+}
+.control_wrap{
+	font-family: 'icon' !important;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+}
+.control_next{
+	-webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
+.control_wrap > view{
+	font-size: 32rpx;
+	line-height: 1;
+	border: 4rpx solid;
+	border-radius: 50%;
+	padding: 16rpx;
+	margin: 20rpx 50rpx;
+	color: #F1F1F1;
+}
+.song_detail{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.7);
+	z-index: 99;
+}
+

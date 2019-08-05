@@ -1,0 +1,177 @@
+.top{
+	width: 100%;
+	.top_item{
+		margin: 20upx 20upx 0;
+		background: #ffffff;
+		.top_pic{
+			float: left;
+			width: 200upx;
+			height: 200upx;
+			image{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.top_music{
+			float: left;
+			width: 440upx;
+			padding-left: 20upx;
+			position: relative;
+			.arrow_ico{
+				    position: absolute;
+					right: -25upx;
+					top: 50%;
+					margin-top: -8px;
+					width: 16upx;
+					height: 16upx;
+					border-right: 1px solid #b2b2b2;
+					border-bottom: 1px solid #b2b2b2;
+					-webkit-transform: rotate(-45deg);
+			}
+			.top_name{
+				font-size: 32upx;
+				padding: 3px 0 0;
+			}
+			.music_name{
+				width: 100%;
+				view{
+					font-size: 30upx;
+					//display: table;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					line-height: 48upx;
+					color: grey;
+					text{
+						opacity: .7;
+						margin-right: 10upx;
+					}
+				}
+			}
+		}
+		
+	}
+}
+//deteils
+.top_detail{
+	padding: 60upx 20upx;
+	.top_info_pic{
+		width: 380upx;
+		height: 380upx;
+		border-radius: 18px;
+		margin: 0 auto;
+		overflow: hidden;
+		box-shadow: 0 7px 13px rgba(0,0,0,.21);
+		image{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.top_info_text{
+		width: 100%;
+		margin-top: 30upx;
+		text{
+			display: block;
+			line-height: 60upx;
+			text-align: center;
+			&:nth-child(1){
+				font-size: 36upx;
+			}
+			&:nth-child(2){
+				font-size: 32upx;
+			}
+			&:nth-child(3){
+				font-size: 28upx;
+				color: grey;
+			}
+		}
+	}
+	.player_btn{
+		width: 380upx;
+		height: 80upx;
+		margin: 20upx auto;
+		border-radius: 30px;
+		box-shadow: 0 6px 32px rgba(24,213,156,.5);
+		background-color: #22d59c;
+		display: -webkit-box;
+		-webkit-box-align: center;
+		-webkit-box-pack: center;
+		.arrow{
+			width: 0;
+			height: 0;
+			border-width: 0upx 25upx 40upx 25upx;
+			border-style: solid;
+			border-color: transparent transparent white;
+			transform: rotate(90deg);
+			border-radius: 3px;
+		}
+	}
+	.top_list{
+		padding: 0 20upx;
+		>text{
+			font-size: 26upx;
+			color: grey;
+		}
+		.list_item{
+			padding: 10upx 0 20upx;
+			border-bottom: 1px solid #ffffff;
+			.songname{
+				width: 100%;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				text{
+					font-size: 30upx;
+					margin-right: 30upx;
+				}
+				.redname{
+					color: #ff0101;
+				}
+			}
+			.singername{
+				width: 100%;
+				margin-top: 10upx;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				>view,>text{
+					float: left;
+				}
+				>view{
+					width: 30upx;
+					height: 30upx;
+					background: url('~@/static/ico/qushi.png') no-repeat center;
+					background-size: 100%;
+				}
+				>text{
+					line-height: 30upx;
+					&:nth-child(2){
+						font-size: 25upx;
+						color: grey;
+						margin: 0 20upx;
+					}
+					&:nth-child(3){
+						width: 500upx;
+						font-size: 26upx;
+						color: #9b9b9b;
+						
+						text{
+							margin-right: 20upx;
+						}
+					}
+				}
+			}
+		}
+	}
+	.toplist_info{
+		width: 100%;
+		>view{
+			font-size: 34upx;
+			margin: 30upx 0;
+		}
+		.rich_info{
+			font-size: 28upx;
+			color: #9b9b9b;
+		}
+	}
+}

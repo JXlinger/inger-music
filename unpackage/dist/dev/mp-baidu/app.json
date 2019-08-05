@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "首页",
+    "navigationBarBackgroundColor": "#f7f4ed",
+    "backgroundColor": "#d8e3e7"
+  },
+  "tabBar": {
+    "color": "#954416",
+    "backgroundColor": "#fbeee2",
+    "selectedColor": "#f26b1f",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/ico/home.png",
+        "selectedIconPath": "static/ico/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "static/ico/user.png",
+        "selectedIconPath": "static/ico/user.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

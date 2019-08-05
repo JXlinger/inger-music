@@ -1,0 +1,95 @@
+.search{
+		padding: 30upx 20upx;
+		background: #f5f5f5;
+		.search_form{
+			width: 100%;
+			input{
+				display: block;
+				font-size: 30upx;
+				line-height: 30upx;
+				background: #ffffff;
+				border: 1px solid #f9f9f9;
+				border-radius: 9px;
+				color: #22d59c;
+				padding: 10upx 0 10upx 20upx;
+			}
+		}
+	}
+.hot_search{
+	padding: 20upx;
+	text{
+		float: left;
+		display: table;
+		margin: 10upx;
+		font-size: 26upx;
+		background: #ffffff;
+		padding: 10upx 20upx;
+		border-radius: 30px;
+		&:first-child{
+			color: #ff0101;
+			border: 1upx solid #ff0101;
+			box-sizing: border-box;
+		}
+	}
+}
+.search_content{
+	padding: 20upx;
+	.songlist{
+		padding: 15upx 20upx;
+		border-bottom: 1px solid #ffffff;
+		position: relative;
+		.mv{
+			width: 100upx;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 5upx;
+			background: #F5FCFF;
+			view{
+				width: 40upx;
+				height: 40upx;
+				margin: 40upx 0 0 40upx;
+				background: url(~@/static/ico/mv.png) center no-repeat;
+				background-size: 100%;
+			}
+			
+		}
+		.ablum_cover{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100upx;
+			height:100%;
+			image{
+				width: 96%;
+				height: 96%;
+				margin-top: 15upx;
+			}
+		}
+		.songname{
+			width: 100%;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			padding-left: 110upx;
+			text{
+				font-size: 30upx;
+				margin-right: 30upx;
+			}
+		}
+		.singername{
+			margin-top: 10upx;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			padding-left: 110upx;
+			text{
+				display: block;
+				float: left;
+				font-size: 26upx;
+				color: #9b9b9b;
+				margin-right: 10upx;
+			}
+		}
+	}
+}

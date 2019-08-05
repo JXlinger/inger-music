@@ -1,0 +1,48 @@
+body{
+	color: #2b2b2b;
+	background: #F5FCFF;
+	font-family: "微软雅黑";
+}
+.clearfix:after {
+	content: '';
+	height: 0;
+	line-height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.loading{
+	position: fixed;
+	z-index: 96;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #F5FCFF;
+	.loading_dh{
+		width: 120upx;
+		height: 120upx;
+		border-radius: 100%;
+		border: 3px #F5FCFF solid;
+		border-right-color: #00B26A;
+		border-top-color: #00B26A;
+		border-bottom-color: #00B26A;
+		margin: 500upx auto 30upx;
+		animation: loading 2s linear infinite; 
+		
+	}
+	text{
+		display: block;
+		font-size: 28upx;
+		text-align: center;
+		color: #00B26A;
+	}
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

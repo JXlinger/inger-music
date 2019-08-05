@@ -1,0 +1,90 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh" : true,
+				"backgroundTextStyle" : "dark"
+			}
+		},
+		{
+			"path":"pages/top/index",
+			"style":{
+				"navigationBarTitleText":"排行榜",
+				"enablePullDownRefresh" : true,
+				"backgroundTextStyle" : "dark"
+			}
+		},
+		{
+			"path":"pages/user/index",
+			"style":{
+				"navigationBarTitleText":"我的"
+			}
+		},
+		{
+			"path":"pages/songlist/index",
+			"style":{
+				"navigationBarTitleText":"歌单详情"
+			}
+		},
+		{
+			"path":"pages/top/detail",
+			"style":{
+				"navigationBarTitleText":"排行榜"
+			}
+		},
+		{
+			"path":"pages/song/index",
+			"style":{
+				"navigationBarTitleText":"详情"
+			}
+		},
+		{
+			"path":"pages/search/index",
+			"style":{
+				"navigationBarTitleText":"搜索",
+				"backgroundColor": "#FFFFFF"
+			}
+		}
+	],
+	"subPackages": [],
+	"requiredBackgroundModes": ["audio"],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "首页",
+		"navigationBarBackgroundColor": "#f7f4ed",
+		"backgroundColor": "#F5FCFF"
+	},
+	"permission": {
+		"scope.userLocation": {
+		  "desc": "你的位置信息将用于小程序位置接口的效果展示"
+		}
+	},
+	"tabBar": {
+		"color": "#954416",
+		"backgroundColor": "#fbeee2",
+		"selectedColor": "#f26b1f",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/ico/home.png",
+				"selectedIconPath": "static/ico/home.png",
+				"text": "首页"
+			},
+			{
+				"pagePath":"pages/top/index",
+				"iconPath":"static/ico/paihangbang_dianji-.png",
+				"selectedIconPath":"static/ico/paihangbang_dianji-.png",
+				"text":"排行榜"
+			},
+			{
+				"pagePath":"pages/user/index",
+				"iconPath":"static/ico/user.png",
+				"selectedIconPath":"static/ico/user.png",
+				"text":"我的"
+			}
+		]
+	}
+}

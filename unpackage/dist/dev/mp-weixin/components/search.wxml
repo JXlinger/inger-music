@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['toSearch',['$event']]]]]}}" class="search" bindtap="__e"><view>歌名/歌手/专辑</view></view>

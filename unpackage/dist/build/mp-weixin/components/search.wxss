@@ -1,0 +1,14 @@
+.search {
+  padding: 20rpx;
+  background: #f5f5f5;
+}
+.search > view {
+  background: #ffffff;
+  border: 1px solid #f9f9f9;
+  border-radius: 9px;
+  font-size: 30rpx;
+  text-indent: 20rpx;
+  padding: 15rpx 0;
+  color: #22d59c;
+}
+
