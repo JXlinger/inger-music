@@ -6,6 +6,7 @@
 			"style": {
 				"navigationBarTitleText": "首页",
 				"enablePullDownRefresh" : true,
+                "onReachBottomDistance": 100,
 				"backgroundTextStyle" : "dark"
 			}
 		},

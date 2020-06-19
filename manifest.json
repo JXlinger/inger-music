@@ -47,8 +47,8 @@
             },
             /* ios打包配置 */
             "ios" : {
-				"UIBackgroundModes":["audio"]
-			},
+                "UIBackgroundModes" : [ "audio" ]
+            },
             /* SDK配置 */
             "sdkConfigs" : {}
         }
@@ -74,5 +74,8 @@
     },
     "mp-toutiao" : {
         "usingComponents" : true
+    },
+    "mp-qq" : {
+        "appid" : "1109772739"
     }
 }

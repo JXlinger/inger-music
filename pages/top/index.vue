@@ -26,6 +26,22 @@ export default {
 			topList: {}
 		};
 	},
+	onShareAppMessage(res) {
+		if (res.from === 'menu') {
+			console.log(res.target);
+		}
+		return {
+			title: 'inger,音乐',
+			path: '/pages/index/index',
+			success: function() {
+				uni.showToast({
+					icon: 'success',
+					title: '分享成功',
+					duration: 2000
+				})
+			}
+		};
+	},
 	onLoad() {
 		this.getTopList();
 	},
