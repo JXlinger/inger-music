@@ -25,12 +25,12 @@
 				</view>
 				
 			</view>
-			<!-- <view class="progress_bar">
+			<view class="progress_bar">
 				<view class="progress_left">{{ currentTime }}</view>
 				<slider class="audio-slider" :activeColor="color" block-size="16" :value="current" :max="duration" @changing="seek=true,current=$event.detail.value"
 				 @change="change"></slider>
 				<view class="progress_right">{{ durationTime }}</view>
-			</view> -->
+			</view>
 			<view class="song_lyric">
 				<scroll-view scroll-top="50" scroll-y="true" class="scroll-Y">
 					<view class="lyric_cont">这里是歌词位置</view>
@@ -126,13 +126,20 @@
 				}
 			});
 			uni.request({//获取歌词
-				url: 'https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric.fcg?g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1&nobase64=1&musicid=201773975&songtype=0&_=1513437581324',
+				url: 'https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric.fcg',
 				method: 'GET',
-				header: {
-					Refer: 'https://y.qq.com/'
-				},
 				data: {
-	
+                    g_tk: 1331728248,
+                    inCharset: 'utf-8',
+                    outCharset: 'utf-8',
+                    notice: 0,
+                    format: 'json',
+                    songmid: option.songmid,
+                    platform: 'yqq',
+                    hostUin: 0,
+                    needNewCode: 0,
+                    categoryId: 10000000,
+                    pcachetime: 1592556924250
 				},
 				success(res) {
 					console.log(res);
