@@ -64,6 +64,7 @@
             "postcss" : true,
             "es6" : true
         },
+		"requiredBackgroundModes": ["audio"],
         "usingComponents" : true
     },
     "mp-alipay" : {
@@ -76,6 +77,7 @@
         "usingComponents" : true
     },
     "mp-qq" : {
-        "appid" : "1109772739"
+        "appid" : "1110047718",
+		"requiredBackgroundModes": ["audio"]
     }
 }
